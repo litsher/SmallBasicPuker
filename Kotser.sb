@@ -1,0 +1,25 @@
+GraphicsWindow.Title="Nathan's awesome kunstwerk"
+
+GraphicsWindow.Width=600
+
+GraphicsWindow.Height=400
+
+GraphicsWindow.PenWidth=3
+
+GraphicsWindow.PenColor="black"
+GraphicsWindow.DrawEllipse (302,180,50,50)
+GraphicsWindow.DrawEllipse (307,190,10,10)
+GraphicsWindow.DrawLine (340,324,340,224) 
+GraphicsWindow.DrawLine (340,250,280,254) 
+
+For I=1 To 2000000
+
+  GraphicsWindow.PenColor=GraphicsWindow.GetRandomColor()
+
+  X=Math.GetRandomNumber(200)-1
+
+  Y=Math.GetRandomNumber(400)-1
+
+  GraphicsWindow.DrawLine(300,200,X,Y)
+  
+EndFor
